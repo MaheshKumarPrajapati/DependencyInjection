@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "DependancyInjection"
+include ':app'
+include ':manual_dependency'
+include ':dagger2_1_constructor_injection'
+include ':dagger2_2_field_injection'
+include ':dagger2_3_provide_and_module_annotation'
+include ':dagger2_4_bind_and_module_annotation'
